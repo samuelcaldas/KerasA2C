@@ -13,6 +13,13 @@ using System.Linq;
 using System.Threading;
 namespace Tensorflow
 {
+    class Program
+    {
+        static Main()
+        {
+            Console.WriteLine("Ola");
+        }
+    }
     //inspired by Tensorflow sample of Actor Critic Method in Cartpole Environment
     internal class A2C
     {
