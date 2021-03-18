@@ -1,0 +1,3 @@
+C:\Users\Samuel\source\repos\KerasA2C\obj\x86\Debug\KerasA2C.csprojAssemblyReference.cache
+C:\Users\Samuel\source\repos\KerasA2C\obj\x86\Debug\ConsoleApplication.exe.config
+C:\Users\Samuel\source\repos\KerasA2C\obj\x86\Debug\KerasA2C.csproj.CoreCompileInputs.cache
