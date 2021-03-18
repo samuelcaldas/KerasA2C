@@ -194,8 +194,9 @@ namespace Tensorflow
                     var grads = tape.gradient(loss_value_tensor, model.trainable_variables);
 
                     //optimizer.apply_gradients(zip(grads, model.trainable_variables))
-                    var zipped = grads.Zip(model.trainable_variables.Cast<ResourceVariable>(),(a,b)=>(a,b)).ToList();
-                    optimizer.apply_gradients(zipped);
+                    optimizer.apply_gradients(zip(grads, model.trainable_variables.Select(x => x as ResourceVariable)));
+                    // var zipped = grads.Zip(model.trainable_variables.Cast<ResourceVariable>(),(a,b)=>(a,b)).ToList();
+                    // optimizer.apply_gradients(zipped);
 
                     // Clear the loss and reward history
                     action_probs_history.Clear();
